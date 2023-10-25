@@ -9,6 +9,7 @@ pipeline {
         }
         stage('Release'){
             steps{
+                sg 'env'
                 echo 'CI'
             }
         }
